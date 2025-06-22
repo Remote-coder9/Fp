@@ -15,7 +15,7 @@ int main()
     else 
     {
     printf("Enter any two Elements you wanna perform Opearations on:\n");
-    scanf("%d %d",&a,&b);
+    scanf("%d %d",&a, &b);
     }
 
     switch(n)
