@@ -45,10 +45,10 @@ int main()
                 break;
          case 7:
                 //performing Factorial 
-                   for(i=1;i<=a;i++)
-    {
-        fact*=i;
-    }
+                  for(i=1;i<=a;i++)
+                  {
+                     fact*=i;
+                  }
                 printf("Factorial of %d is %d\n",a,fact); 
                 break;
          case 8:
