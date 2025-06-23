@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,a=0,b=0,pow,i;
+    int n,a=0,b=0,i;
     int fact=1;
     printf("What Operation you wanna perform:\n");
     printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Modulo Division\n6.Power\n7.Factorial\n.8.Largest Element\n");
@@ -21,7 +22,7 @@ int main()
     switch(n)
     {
         case 1:
-                printf("Addtion\n");
+                printf("Addtion of %d and %d is %d\n",a,b,a+b);
                 break;
         case 2:
                 //performing subtraction operation
@@ -29,7 +30,7 @@ int main()
                 break;
         case 3:
                 //performing Multiplication Operation
-                printf("Multiplicatin of %d and %d is \n",a,b);
+                printf("Multiplicatin of %d and %d is %d\n",a,b,a*b);
                 break;
         case 4:
                 //performing Division Operation
@@ -37,11 +38,12 @@ int main()
                 break;
          case 5:
                 //performing Modulo Division
-                printf("Modulo Division of %d and %d is \n",a,b);
+                printf("Modulo Division of %d and %d is %d\n",a,b,a%b);
                 break;
          case 6:
                 //performing Power
-                printf("Power of %d and %d is \n",a,b);
+		double c=pow(a,b);
+                printf("Power of %d and %d is %.0f\n",a,b,c);
                 break;
          case 7:
                 //performing Factorial 
@@ -53,7 +55,8 @@ int main()
                 break;
          case 8:
                 //performing Largest Element
-                printf("Largest Element amoung the %d and %d is \n",a,b);
+		int c=(a>b)a:b;
+                printf("Largest Element amoung the %d and %d is \n",a,b,c);
                 break;                                                        
     }
     return 0;
